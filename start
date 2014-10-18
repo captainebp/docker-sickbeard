@@ -1,5 +1,6 @@
 #! /bin/sh
-
+# Copy and setup autoProcessTV scripts to allow sabnzb access to them through the docker shared volume
+cp -a /srv/sickbeard/autoProcessTV /data/
 chown -R downloads:downloads /data
 
 # Run supervisor
